@@ -1,0 +1,322 @@
+/* public/css/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 5px; /* Add padding-top to avoid content overlapping with the fixed header */
+}
+
+.categories{
+    margin: 70px 0;
+}
+nav a {
+    color: rgb(14, 13, 13);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-us-container:hover {
+    transform: scale(1.01);
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us-content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.about-us-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    height: 150px;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 150px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column; /* Set content in column layout */
+    align-items: center; /* Center content horizontally */
+    justify-content: center;
+}
+
+.footer p {
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Arrange links in a column */
+    align-items: center; /* Center align the links */
+}
+
+.footer-links li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .about-us-container {
+        padding: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .about-us-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-us-content p, ul {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+header {
+    position: relative; /* To control the position of child elements */
+    color: rgb(8, 8, 8);
+    padding: 30px;
+    text-align: center;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.logo {
+    position: absolute; /* Position the logo in the header */
+    top: -20px; /* Adjust top position */
+    left: 700px; /* Move logo to the left */
+    display: flex; /* Align logo and text in a row */
+    align-items: center; /* Vertically center the logo and site name */
+}
+
+.logo img {
+    margin-right: 10px; /* Space between logo and name */
+}
+
+.site-name {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the site name bold */
+}
+
+/* Center button */
+#MenuButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the button horizontally */
+    background-color: transparent;
+    border: none;
+    color: #050505;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Change the hover color */
+#MenuButton:hover {
+    background-color: transparent;
+    color: #ff6f61;
+}
+
+/* Navigation menu styles */
+nav {
+    margin-top: -20px; /* Reduced space between logo and nav */
+}
+
+/* Adjust the button's position upwards */
+#MenuButton {
+    background-color: transparent; /* Set background to transparent */
+    border: none; /* Remove border if desired */
+    color: #f0f0f0; /* Text color */
+    padding: 10px 15px; /* Adjust padding as needed */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-top: 15px; /* Move the button slightly upwards */
+}
+
+/* Change the hover color to transparent */
+#MenuButton:hover {
+    background-color: transparent; /* Example of a semi-transparent white */
+}
+
+/* Adjust the navbar spacing if needed */
+
+
+
+/* To align logo, name, and button on the right */
+.navbar-right {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+}
+
+#MenuItems {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin-left: 10px; /* Space between the menu and the logo/text */
+    font-size: 18px; /* Increase text size */
+}
+
+#MenuItems li {
+    display: inline; /* Display items inline */
+    margin-right: 15px; /* Space between menu items */
+}
+
+#MenuItems a {
+    text-decoration: none; /* Remove underline from links */
+    color: #050505; /* Text color */
+}
+header {
+    position: relative; /* To control the position of child elements */
+    color: rgb(8, 8, 8);
+    padding: 20px;
+    text-align: center;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+
+/* Center button */
+/* Center button */
+#MenuButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the button horizontally */
+    background-color: transparent;
+    border: none;
+    color: #050505;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold; /* Make the button text bold */
+}
+
+
+/* Change the hover color */
+#MenuButton:hover {
+    background-color: transparent;
+    color: #ff6f61;
+}
+header {
+    position: relative; /* To control the position of child elements */
+    color: rgb(8, 8, 8);
+    padding: 40px;
+    text-align: center;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.logo {
+    position: relative; /* Use relative positioning */
+    top: 80%; /* Adjust as necessary */
+    left: 70%; /* Center the logo horizontally */
+    transform: translateX(-50%); /* Adjust position back to the left */
+    display: flex; /* Align logo and text in a row */
+    align-items: center; /* Vertically center the logo and site name */
+}
+
+.logo img {
+    max-width: 100px; /* Set a max-width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and name */
+}
+
+.site-name {
+    font-size: 1vw; /* Use viewport width for responsive font size */
+    font-weight: bold;
+}
+
+/* Optional: Ensure proper resizing for the logo and site name on smaller screens */
+@media (max-width: 768px) {
+    .site-name {
+        font-size: 1.5vw; /* Adjust font size for smaller screens */
+    }
+
+    .logo img {
+        max-width: 80px; /* Smaller logo size on mobile */
+    }
+}
